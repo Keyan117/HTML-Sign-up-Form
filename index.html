@@ -12,7 +12,8 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form method="GET" action="results.html"> <!-- TODO: Set Action and Method Properties -->
+           
             <div>
                 <label for="firstname">Your First Name</label>
                 <input type="text" id="firstname" name="firstname">
@@ -32,10 +33,21 @@
             <!-- Todo: Street Address Input -->
             <label for="Street Address">Your Street Address</label>
             <input type="text" id="Street Address" name="Street Address">
+            <tr>
+                <td>password</td>
+                <td><input type="text" maxlength="8" minlength="4"</td>
+               </tr
 
             <!-- Todo: City, State, and Zip Inputs -->
-            <label for="City, State, and Zip">Your City, State, and Zip</label>
-            <input type="text" id="City, State, and Zip" name="City, State, and Zip">
+            <label for="City,">Your City,</label>
+            <input type="text" id="City" name="City">
+            <label for="state">your state</label>
+            <select name="state"> 
+                <option value="AK">Alaska</option>
+            </select>
+            <label for="zip">your zip</label>
+            <input type="text" id="zip" name="zip">
+            
 
             <label for= "Age">your Age</label>
             <input type="text" id="Age" name="Age">
@@ -45,16 +57,29 @@
             <!-- TODO: Second fieldset -->
             <fieldset>
             <!-- TODO: Radio buttons for selecting preferred destination -->
-            <label>done</label>
-            <input type="radio" id="yes" value="yes" name="yes"><label for="yes" class="light">yes</label>
-            <input type="radio" id="no" value="no" name="no"><label for="no" class="light">no</label>
+            <legend>your preffence</legend>
+            <input type="radio" id="san diego" value="san diego" name="san diego"><label for="san diego" class="light">san diego</label>
+            <input type="radio" id="Las Vegas" value="Las Vegas" name="Las Vegas"><label for="Las Vegas" class="light">Las Vegas</label>
+            <input type="radio" id="Hawaii" value="Hawaii" name="Hawaii"><label for="Hawaii" class="light">Hawaii</label>
+            <input type="radio" id="Bahamas" value="Bahamas" name="Bahamas"><label for="Bahamas" class="light">Bahamas</label>
+            <input type="radio" id="New York" value="New York" name="New York"><label for="New York" class="light">New York</label>
+            <input type="radio" id="Cancun" value="Cancun" name="Cancun"><label for="Cancun" class="light">Cancun</label>
+            
+            
+            
             <!-- TODO: Color input for selecting favorite color -->
             <input type="color" id="color" value="color" name="color"><label for="color" class="light"></label>
             <!-- TODO: Checkboxes for selecting extra add-ons -->
-            <label>are you a robot</label>
+            <label>Add on</label>
             <input type="checkbox" id="yes" value="yes" name="yes"><label for="yes" class="light">yes</label>
             <input type="checkbox" id="no" value="no" name="no"><label for="no" class="light">no</label>
-            </fieldset>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br>  
+        </fieldset>
             <!-- TODO: Submit Button -->
             <input type="submit" id="submit" value="submit" name="submit">
         </form>
