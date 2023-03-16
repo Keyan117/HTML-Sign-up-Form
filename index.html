@@ -15,11 +15,16 @@
         <form method="GET" action="results.html"> <!-- TODO: Set Action and Method Properties -->
            
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <tr>
+                <td>Your First Name</td><span class="required-field">*</span>
+                <td><input type="text" maxlength="35" minlength="2" required></td>
+                </tr>
                 <!-- TODO: Create a "lastname" input with type "text" -->
-                <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <tr>
+                <td>Your Last Name<span class="required-field">*</span></td>
+                </label>
+                <td><input type="text" maxlength="35" minlength="2" required></td>
+                </tr>
 
             </div>
             <!-- TODO: Make fieldset and legend -->
@@ -28,11 +33,13 @@
             
             <legend>Information</legend>
             <!-- Todo: Email Input -->
-            <label for="Email">Your Email</label>
-            <input type="text" id="Email" name="Email">
+            <label for="Email">Your Email<span class="required-field">*</span>
+            </label>
+            <input type="text" id="Email" name="Email"required>
             <!-- Todo: Street Address Input -->
-            <label for="Street Address">Your Street Address</label>
-            <input type="text" id="Street Address" name="Street Address">
+            <label for="Street Address">Your Street Address<span class="required-field">*</span>
+            </label>
+            <input type="text" id="Street Address" name="Street Address" required>
             <tr>
                 <td>password</td>
                 <td><input type="text" maxlength="8" minlength="4"</td>
